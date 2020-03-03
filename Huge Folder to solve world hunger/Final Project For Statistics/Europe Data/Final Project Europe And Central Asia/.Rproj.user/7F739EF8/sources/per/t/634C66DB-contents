@@ -1,0 +1,14 @@
+
+
+
+#This goes into the r script
+plot(WorldHungerDataEastAsiaAndPacific$`Severe Wasting`~factor(WorldHungerDataEastAsiaAndPacific$Countries), ylab = "Severe Wasting Percentage", xlab = "Countries",xaxt = "none")
+axis(1,seq(0,26,1),las=2)
+plot(WorldHungerDataEastAsiaAndPacific$Wasting~factor(WorldHungerDataEastAsiaAndPacific$Countries), ylab = "Wasting Percentage", xlab = "Countries",xaxt = "none")
+axis(1,seq(0,26,1),las=2)
+plot(WorldHungerDataEastAsiaAndPacific$Overweight~factor(WorldHungerDataEastAsiaAndPacific$Countries), ylab = "Overweight Percentage", xlab = "Countries",xaxt = "none")
+axis(1,seq(0,26,1),las=2)
+plot(WorldHungerDataEastAsiaAndPacific$Stunting~factor(WorldHungerDataEastAsiaAndPacific$Countries), ylab = "Stunting Percentage", xlab = "Countries",xaxt = "none")
+axis(1,seq(0,26,1),las=2)
+plot(WorldHungerDataEastAsiaAndPacific$Underweight~factor(WorldHungerDataEastAsiaAndPacific$Countries), ylab = "Underweight Percentage", xlab = "Countries",xaxt = "none")
+axis(1,seq(0,26,1),las=2)

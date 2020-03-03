@@ -1,0 +1,29 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1555944838042.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "6421B01D",
+    "lastKnownWriteTime" : 3180141808686473843,
+    "last_content_update" : 1555944838042,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "CDF99AB2",
+        "caption" : "WorldHungerSubSaharanAfrica",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=WorldHungerSubSaharanAfrica&cache_key=CDF99AB2",
+        "displayedObservations" : "276",
+        "environment" : "",
+        "object" : "WorldHungerSubSaharanAfrica",
+        "preview" : "0",
+        "totalObservations" : "276",
+        "variables" : "24"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

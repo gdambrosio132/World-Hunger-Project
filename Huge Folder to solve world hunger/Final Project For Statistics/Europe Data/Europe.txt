@@ -1,0 +1,61 @@
+WorldHungerEuropeAndCentralAsia<-WorldHungerEuropeAndCentralAsia[c(19:22,36:40,43:48,75,99:101,110,208:209,281:284,388:392,420:424,506:507,612:618,648:650,701:709,716:718,741:749,758,781:783), ]
+
+
+WorldHungerEuropeAndCentralAsia$...1<-NULL
+> WorldHungerEuropeAndCentralAsia$...3<-NULL
+> WorldHungerEuropeAndCentralAsia$...5<-NULL
+> WorldHungerEuropeAndCentralAsia$...6<-NULL
+> WorldHungerEuropeAndCentralAsia$...7<-NULL
+> WorldHungerEuropeAndCentralAsia$...8<-NULL
+> WorldHungerEuropeAndCentralAsia$...9<-NULL
+> WorldHungerEuropeAndCentralAsia$...12<-NULL
+> WorldHungerEuropeAndCentralAsia$...13<-NULL
+> WorldHungerEuropeAndCentralAsia$...14<-NULL
+> WorldHungerEuropeAndCentralAsia$...21<-NULL
+> WorldHungerEuropeAndCentralAsia$...22<-NULL
+> WorldHungerEuropeAndCentralAsia$...23<-NULL
+
+
+> colnames(WorldHungerEuropeAndCentralAsia)[colnames(WorldHungerEuropeAndCentralAsia)=="...2"]<-"Countries"
+> colnames(WorldHungerEuropeAndCentralAsia)[colnames(WorldHungerEuropeAndCentralAsia)=="...4"]<-"Survey Year"
+> colnames(WorldHungerEuropeAndCentralAsia)[colnames(WorldHungerEuropeAndCentralAsia)=="...10"]<-"Income Group"
+> colnames(WorldHungerEuropeAndCentralAsia)[colnames(WorldHungerEuropeAndCentralAsia)=="...11"]<-"Region"
+> colnames(WorldHungerEuropeAndCentralAsia)[colnames(WorldHungerEuropeAndCentralAsia)=="...15"]<-"Survey Sample Size"
+> colnames(WorldHungerEuropeAndCentralAsia)[colnames(WorldHungerEuropeAndCentralAsia)=="...16"]<-"Severe Wasting"
+> colnames(WorldHungerEuropeAndCentralAsia)[colnames(WorldHungerEuropeAndCentralAsia)=="...17"]<-"Wasting"
+> colnames(WorldHungerEuropeAndCentralAsia)[colnames(WorldHungerEuropeAndCentralAsia)=="...18"]<-"Overweight"
+> colnames(WorldHungerEuropeAndCentralAsia)[colnames(WorldHungerEuropeAndCentralAsia)=="...19"]<-"Stunting"
+> colnames(WorldHungerEuropeAndCentralAsia)[colnames(WorldHungerEuropeAndCentralAsia)=="...20"]<-"Underweight"
+> colnames(WorldHungerEuropeAndCentralAsia)[colnames(WorldHungerEuropeAndCentralAsia)=="...24"]<-"Under 5 population (000s)"
+
+------------------------------------------------------------------R Script-----------------------------------------------------------------
+plot(WorldHungerEuropeAndCentralAsia$`Severe Wasting`)
+plot(WorldHungerEuropeAndCentralAsia$Wasting)
+plot(WorldHungerEuropeAndCentralAsia$Overweight)
+plot(WorldHungerEuropeAndCentralAsia$Stunting)
+plot(WorldHungerEuropeAndCentralAsia$Underweight)
+
+linmod1<-lm(WorldHungerEuropeAndCentralAsia$`Severe Wasting`~WorldHungerEuropeAndCentralAsia$Countries)
+residual1<-resid(linmod1)
+plot(residual1)
+abline(0,0)
+
+linmod2<-lm(WorldHungerEuropeAndCentralAsia$Wasting~WorldHungerEuropeAndCentralAsia$Countries)
+residual2<-resid(linmod2)
+plot(residual2)
+abline(0,0)
+
+linmod3<-lm(WorldHungerEuropeAndCentralAsia$Overweight~WorldHungerEuropeAndCentralAsia$Countries)
+residual3<-resid(linmod3)
+plot(residual3)
+abline(0,0)
+
+linmod4<-lm(WorldHungerEuropeAndCentralAsia$Stunting~WorldHungerEuropeAndCentralAsia$Countries)
+residual4<-resid(linmod4)
+plot(residual4)
+abline(0,0)
+
+linmod5<-lm(WorldHungerEuropeAndCentralAsia$Underweight~WorldHungerEuropeAndCentralAsia$Countries)
+residual5<-resid(linmod5)
+plot(residual5)
+abline(0,0)

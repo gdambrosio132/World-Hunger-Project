@@ -1,0 +1,29 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1555856131867.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "97DF68F7",
+    "lastKnownWriteTime" : 5292976843906638626,
+    "last_content_update" : 1555856131867,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "A7227FA4",
+        "caption" : "WorldHungerDataEastAsiaAndPacific",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=WorldHungerDataEastAsiaAndPacific&cache_key=A7227FA4",
+        "displayedObservations" : 135,
+        "environment" : "",
+        "object" : "WorldHungerDataEastAsiaAndPacific",
+        "preview" : 0,
+        "totalObservations" : 135,
+        "variables" : 11
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

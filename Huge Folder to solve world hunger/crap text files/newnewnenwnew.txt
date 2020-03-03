@@ -1,0 +1,115 @@
+EastAsiaAndPacific$...12[is.na(EastAsiaAndPacific$...12)]<-1
+
+EastAsiaAndPacific$...12[!is.na(EastAsiaAndPacific$...12)]<-0
+
+GDP for east asia only
+GDPEastAsia<-GDP_Data[c(11,29,34,42,67,91,99,103,104,105,109,121,132,136,153,156,164,172,176,193,194,196,202,210,212), ]
+
+#line graph for east asia gdp
+#x-axis is the years
+#y-axis the the range of money
+#logistic grpahs x axis=gdp yaxis = 5 varibles
+xGDPEastAsia2<-c(1990,2000,2009,2010,2011,2012,2013,2014,2015,2016,2017)
+
+#GDPEastAsia$Austrailia = 1:nrow(GDPEastAsia)
+yAus<-c(3.108380e+11,4.150342e+11,9.264482e+11,1.144261e+12,1.394281e+12,1.543411e+12,1.573697e+12,1.464955e+12,1.349034e+12,1.208039e+12,1.323421e+12)
+yBru<-c(3.520552e+09,6.001153e+09,1.073237e+10,1.370737e+10,1.852532e+10,1.904850e+10,1.809383e+10,1.709834e+10,1.293039e+10,1.140065e+10,1.212809e+10)
+yCam<-c(0.000000e+00,3.677898e+09,1.040185e+10,1.124228e+10,1.282954e+10,1.405444e+10,1.522799e+10,1.670261e+10,1.804995e+10,2.001675e+10,2.215821e+10)
+yChi<-c(3.608579e+11,1.211347e+12,5.109954e+12,6.100620e+12,7.572554e+12,8.560547e+12,9.607224e+12,1.048237e+13,1.106467e+13,1.119099e+13,1.223770e+13)
+yFij<-c(1.337025e+09,1.684110e+09,2.870625e+09,3.140509e+09,3.774531e+09,3.972013e+09,4.190143e+09,4.483416e+09,4.362128e+09,4.671313e+09,5.061203e+09)
+yInd<-c(1.061407e+11,1.650210e+11,5.395801e+11,7.550942e+11,8.929691e+11,9.178699e+11,9.125241e+11,8.908148e+11,8.608542e+11,9.318774e+11,1.015421e+12)
+yJap<-c(3.132818e+12,4.887520e+12,5.231383e+12,5.700098e+12,6.157460e+12,6.203213e+12,5.155717e+12,4.850414e+12,4.394978e+12,4.949273e+12,4.872415e+12)
+yKir<-c(3.980954e+07,6.725417e+07,1.324201e+08,1.561209e+08,1.817050e+08,1.902433e+08,1.851139e+08,1.797034e+08,1.711179e+08,1.783289e+08,1.855725e+08)
+yNKo<-c(0.000000e+00,0.000000e+00,0.000000e+00,0.000000e+00,0.000000e+00,0.000000e+00,0.000000e+00,0.000000e+00,0.000000e+00,0.000000e+00,0.000000e+00)
+ySKo<-c(2.793494e+11,5.616331e+11,9.019350e+11,1.094499e+12,1.202464e+12,1.222807e+12,1.305605e+12,1.411334e+12,1.382764e+12,1.414804e+12,1.530751e+12)
+yLao<-c(8.655599e+08,1.731198e+09,5.832915e+09,7.127793e+09,8.749241e+09,1.019135e+10,1.194223e+10,1.326846e+10,1.439039e+10,1.580571e+10,1.685309e+10)
+yMal<-c(4.402418e+10,9.378974e+10,2.022576e+11,2.550166e+11,2.979520e+11,3.144431e+11,3.232772e+11,3.380620e+11,2.966363e+11,2.967529e+11,3.147103e+11)
+yMon<-c(2.560786e+09,1.136896e+09,4.583850e+09,7.189482e+09,1.040980e+10,1.229277e+10,1.258212e+10,1.222651e+10,1.174962e+10,1.118673e+10,1.143364e+10)
+yMya<-c(0.000000e+00,8.905066e+09,3.690618e+10,4.954081e+10,5.997733e+10,5.993780e+10,6.026973e+10,6.544620e+10,5.968741e+10,6.325618e+10,6.706875e+10)
+yPap<-c(3.219730e+09,3.521340e+09,1.161954e+10,1.425073e+10,1.798482e+10,2.129583e+10,2.126131e+10,2.306005e+10,2.063864e+10,1.902812e+10,2.053631e+10)
+yPhi<-c(4.431159e+10,8.102630e+10,1.683346e+11,1.995908e+11,2.241431e+11,2.500921e+11,2.718361e+11,2.845845e+11,2.927741e+11,3.048891e+11,3.135952e+11)
+ySam<-c(1.257663e+08,2.690197e+08,5.609595e+08,6.430467e+08,7.397851e+08,8.011686e+08,8.048085e+08,8.051626e+08,8.041006e+08,7.866400e+08,8.409280e+08)
+ySin<-c(3.615203e+10,9.583393e+10,1.924084e+11,2.364218e+11,2.759669e+11,2.906737e+11,3.044543e+11,3.115395e+11,3.040978e+11,3.097639e+11,3.239072e+11)
+ySol<-c(3.025150e+08,4.351039e+08,5.977654e+08,6.811512e+08,9.327256e+08,1.063879e+09,1.129787e+09,1.172268e+09,1.154650e+09,1.232699e+09,1.303454e+09)
+yTha<-c(8.534306e+10,1.263923e+11,2.817101e+11,3.411050e+11,3.708187e+11,3.975581e+11,4.203333e+11,4.073394e+11,4.013994e+11,4.117552e+11,4.553027e+11)
+yTim<-c(0.000000e+00,4.396000e+08,3.199600e+09,3.998900e+09,5.681900e+09,6.671000e+09,5.649800e+09,4.045400e+09,3.104400e+09,2.521000e+09,2.954621e+09)
+yTon<-c(1.135638e+08,2.023635e+08,3.181666e+08,3.694852e+08,4.230118e+08,4.723583e+08,4.506864e+08,4.439111e+08,4.354382e+08,4.011175e+08,4.276598e+08)
+yTuv<-c(8.824448e+06,1.374206e+07,2.710108e+07,3.182352e+07,3.871183e+07,3.767173e+07,3.750912e+07,3.729059e+07,3.555604e+07,3.657261e+07,3.973132e+07)
+yVan<-c(1.583974e+08,2.720147e+08,6.100666e+08,7.008043e+08,7.921497e+08,7.817029e+08,8.017876e+08,8.149543e+08,7.379172e+08,7.879426e+08,8.628798e+08)
+yVie<-c(6.471741e+09,3.117252e+10,1.060147e+11,1.159317e+11,1.355394e+11,1.558200e+11,1.712220e+11,1.862047e+11,1.932411e+11,2.052762e+11,2.237799e+11)
+
+plot(xGDPEastAsia,yAus,type = "o",col=1,pch=1,lty=1, ylim=c(min(GDPEastAsia2),max(GDPEastAsia2)))
+#Brunei
+points(xGDPEastAsia,yBru,col=2,pch=2)
+lines(xGDPEastAsia,yBru,col=2,lty=2)
+#Cambodia
+points(xGDPEastAsia,yCam,col=3,pch=3)
+lines(xGDPEastAsia,yCam,col=3,lty=3)
+#China
+points(xGDPEastAsia,yChi,col=4,pch=4)
+lines(xGDPEastAsia,yChi,col=4,lty=4)
+#Fiji
+points(xGDPEastAsia,yFij,col=5,pch=5)
+lines(xGDPEastAsia,yFij,col=5,lty=5)
+#Indonesia
+points(xGDPEastAsia,yInd,col=6,pch=6)
+lines(xGDPEastAsia,yInd,col=6,lty=6)
+#Japan
+points(xGDPEastAsia,yJap,col=7,pch=7)
+lines(xGDPEastAsia,yJap,col=7,lty=7)
+#Kir
+points(xGDPEastAsia,yKir,col=8,pch=8)
+lines(xGDPEastAsia,yKir,col=8,lty=8)
+#NKorea
+points(xGDPEastAsia,yNKo,col=9,pch=9)
+lines(xGDPEastAsia,yNKo,col=9,lty=9)
+#SKorea
+points(xGDPEastAsia,ySKo,col=10,pch=10)
+lines(xGDPEastAsia,ySKo,col=10,lty=10)
+#Lao
+points(xGDPEastAsia,yLao,col=11,pch=11)
+lines(xGDPEastAsia,yLao,col=11,lty=11)
+#Mal
+points(xGDPEastAsia,yMal,col=12,pch=12)
+lines(xGDPEastAsia,yMal,col=12,lty=12)
+#Mongolia
+points(xGDPEastAsia,yMon,col=13,pch=13)
+lines(xGDPEastAsia,yMon,col=13,lty=13)
+#Mya
+points(xGDPEastAsia,yMya,col=14,pch=14)
+lines(xGDPEastAsia,yMya,col=14,lty=14)
+#Pap
+points(xGDPEastAsia,yPap,col=15,pch=15)
+lines(xGDPEastAsia,yPap,col=15,lty=15)
+#Phillipines
+points(xGDPEastAsia,yPhi,col=16,pch=16)
+lines(xGDPEastAsia,yPhi,col=16,lty=16)
+#Samoa
+points(xGDPEastAsia,ySam,col=17,pch=17)
+lines(xGDPEastAsia,ySam,col=17,lty=17)
+#Singapore
+points(xGDPEastAsia,ySin,col=18,pch=18)
+lines(xGDPEastAsia,ySin,col=18,lty=18)
+#Thailand
+points(xGDPEastAsia,yTha,col=19,pch=19)
+lines(xGDPEastAsia,yTha,col=19,lty=19)
+#Tim
+points(xGDPEastAsia,yTim,col=20,pch=20)
+lines(xGDPEastAsia,yTim,col=20,lty=20)
+#Ton
+points(xGDPEastAsia,yTon,col=21,pch=21)
+lines(xGDPEastAsia,yTon,col=21,lty=21)
+#Tuv
+points(xGDPEastAsia,yTuv,col=22,pch=22)
+lines(xGDPEastAsia,yTuv,col=22,lty=22)
+#Van
+points(xGDPEastAsia,yVan,col=23,pch=23)
+lines(xGDPEastAsia,yVan,col=23,lty=23)
+#Vietnam
+points(xGDPEastAsia,yVie,col=24,pch=24)
+lines(xGDPEastAsia,yVie,col=24,lty=24)
+
+legend(1993, 2.0e+12,legend=c("Austrailia","Brunei","Cambodia","China","Fiji","Indonesia","Japan","Kiribati", "Laos", "Malaysia"
+                              ,"Mongolia", "Myanmar", "North Korea", "Papa New Guinea", "Phillipines", "Samoa","Singapore",
+                              "South Korea", "Solomon Islands", "Thailand", "Timor-Leste", "Tonga", "Tuvalu", "Vanuatu", "Vietnam"),
+       pch=1:24, cex = 0.6)

@@ -1,0 +1,61 @@
+WorldHungerSubSaharanAfrica<-WorldHungerSubSaharanAfrica[c(30:32,80:83,102:104,111:128,135:140,142:150,184:191,200:206,216:220,257:270,273:280,285:292,300:310,393:401,432:441,444:459,475:491,513:518,528:531,547:563,619:625,629:633,636:647,651:659,664:675,684:686,690:694,724:730,751:757,759:768,837:852), ]
+
+
+WorldHungerSubSaharanAfrica$...1<-NULL
+WorldHungerSubSaharanAfrica$...3<-NULL
+WorldHungerSubSaharanAfrica$...5<-NULL
+WorldHungerSubSaharanAfrica$...6<-NULL
+WorldHungerSubSaharanAfrica$...7<-NULL
+WorldHungerSubSaharanAfrica$...8<-NULL
+WorldHungerSubSaharanAfrica$...9<-NULL
+WorldHungerSubSaharanAfrica$...12<-NULL
+WorldHungerSubSaharanAfrica$...13<-NULL
+WorldHungerSubSaharanAfrica$...14<-NULL
+WorldHungerSubSaharanAfrica$...21<-NULL
+WorldHungerSubSaharanAfrica$...22<-NULL
+WorldHungerSubSaharanAfrica$...23<-NULL
+
+
+colnames(WorldHungerSubSaharanAfrica)[colnames(WorldHungerSubSaharanAfrica)=="...2"]<-"Countries"
+colnames(WorldHungerSubSaharanAfrica)[colnames(WorldHungerSubSaharanAfrica)=="...4"]<-"Survey Year"
+colnames(WorldHungerSubSaharanAfrica)[colnames(WorldHungerSubSaharanAfrica)=="...10"]<-"Income Group"
+colnames(WorldHungerSubSaharanAfrica)[colnames(WorldHungerSubSaharanAfrica)=="...11"]<-"Region"
+colnames(WorldHungerSubSaharanAfrica)[colnames(WorldHungerSubSaharanAfrica)=="...15"]<-"Survey Sample Size"
+colnames(WorldHungerSubSaharanAfrica)[colnames(WorldHungerSubSaharanAfrica)=="...16"]<-"Severe Wasting"
+colnames(WorldHungerSubSaharanAfrica)[colnames(WorldHungerSubSaharanAfrica)=="...17"]<-"Wasting"
+colnames(WorldHungerSubSaharanAfrica)[colnames(WorldHungerSubSaharanAfrica)=="...18"]<-"Overweight"
+colnames(WorldHungerSubSaharanAfrica)[colnames(WorldHungerSubSaharanAfrica)=="...19"]<-"Stunting"
+colnames(WorldHungerSubSaharanAfrica)[colnames(WorldHungerSubSaharanAfrica)=="...20"]<-"Underweight"
+colnames(WorldHungerSubSaharanAfrica)[colnames(WorldHungerSubSaharanAfrica)=="...24"]<-"Under 5 population (000s)"
+
+------------------------------------------------------------------R Script-----------------------------------------------------------------
+plot(WorldHungerSubSaharanAfrica$`Severe Wasting`)
+plot(WorldHungerSubSaharanAfrica$Wasting)
+plot(WorldHungerSubSaharanAfrica$Overweight)
+plot(WorldHungerSubSaharanAfrica$Stunting)
+plot(WorldHungerSubSaharanAfrica$Underweight)
+
+linmod1<-lm(WorldHungerSubSaharanAfrica$`Severe Wasting`~WorldHungerSubSaharanAfrica$Countries)
+residual1<-resid(linmod1)
+plot(residual1)
+abline(0,0)
+
+linmod2<-lm(WorldHungerSubSaharanAfrica$Wasting~WorldHungerSubSaharanAfrica$Countries)
+residual2<-resid(linmod2)
+plot(residual2)
+abline(0,0)
+
+linmod3<-lm(WorldHungerSubSaharanAfrica$Overweight~WorldHungerSubSaharanAfrica$Countries)
+residual3<-resid(linmod3)
+plot(residual3)
+abline(0,0)
+
+linmod4<-lm(WorldHungerSubSaharanAfrica$Stunting~WorldHungerSubSaharanAfrica$Countries)
+residual4<-resid(linmod4)
+plot(residual4)
+abline(0,0)
+
+linmod5<-lm(WorldHungerSubSaharanAfrica$Underweight~WorldHungerSubSaharanAfrica$Countries)
+residual5<-resid(linmod5)
+plot(residual5)
+abline(0,0)

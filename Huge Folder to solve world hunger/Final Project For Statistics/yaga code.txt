@@ -1,0 +1,25 @@
+World_Hunger<-World_Hunger[-c(1:15), ]
+World_Hunger$...1<-NULL
+World_Hunger$...3<-NULL
+World_Hunger$...5<-NULL
+World_Hunger$...6<-NULL
+World_Hunger$...7<-NULL
+World_Hunger$...8<-NULL
+World_Hunger$...9<-NULL
+World_Hunger$...12<-NULL
+World_Hunger$...13<-NULL
+World_Hunger$...14<-NULL
+World_Hunger$...21<-NULL
+World_Hunger$...22<-NULL
+World_Hunger$...23<-NULL
+colnames(World_Hunger)[colnames(World_Hunger)=="...2"]<-"Countries"
+colnames(World_Hunger)[colnames(World_Hunger)=="...4"]<-"Survey Year"
+colnames(World_Hunger)[colnames(World_Hunger)=="...10"]<-"Income Group"
+colnames(World_Hunger)[colnames(World_Hunger)=="...11"]<-"Region"
+colnames(World_Hunger)[colnames(World_Hunger)=="...15"]<-"Survey Sample Size"
+colnames(World_Hunger)[colnames(World_Hunger)=="...16"]<-"Severe Wasting"
+colnames(World_Hunger)[colnames(World_Hunger)=="...17"]<-"Wasting"
+colnames(World_Hunger)[colnames(World_Hunger)=="...18"]<-"Overweight"
+colnames(World_Hunger)[colnames(World_Hunger)=="...19"]<-"Stunting"
+colnames(World_Hunger)[colnames(World_Hunger)=="...20"]<-"Underweight"
+colnames(World_Hunger)[colnames(World_Hunger)=="...24"]<-"Under 5 population (000s)"

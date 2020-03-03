@@ -1,0 +1,29 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1555952146389.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "CFCC28E1",
+    "lastKnownWriteTime" : 0,
+    "last_content_update" : 1555952146389,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "53A5A277",
+        "caption" : "WorldHungerMiddleEastAndNorthAfrica",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=WorldHungerMiddleEastAndNorthAfrica&cache_key=53A5A277",
+        "displayedObservations" : 852,
+        "environment" : "",
+        "object" : "WorldHungerMiddleEastAndNorthAfrica",
+        "preview" : 0,
+        "totalObservations" : 852,
+        "variables" : 24
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

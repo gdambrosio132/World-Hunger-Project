@@ -1,0 +1,29 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1555955568303.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "C89F5359",
+    "lastKnownWriteTime" : 7959393764393383265,
+    "last_content_update" : 1555955568303,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "2FEB9B88",
+        "caption" : "WorldHungerEuropeAndCentralAsia",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=WorldHungerEuropeAndCentralAsia&cache_key=2FEB9B88",
+        "displayedObservations" : 852,
+        "environment" : "",
+        "object" : "WorldHungerEuropeAndCentralAsia",
+        "preview" : 0,
+        "totalObservations" : 852,
+        "variables" : 24
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

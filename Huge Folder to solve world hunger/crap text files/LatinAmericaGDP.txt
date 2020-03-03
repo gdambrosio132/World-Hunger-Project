@@ -1,0 +1,149 @@
+//Do this first in a r script
+LatinAmerica<-worldhunger[c(33:35,74,76:79,88:98,105:108,151:165,178:183,192:199,207,226:239,251:256,293:299,311:328,362:381,492:498,541:546,576:578,582:598,626,687:689,733:735,774:780,787:807), ]
+
+GDPLatinAmerica<-GDP_Data[c(8,17,20,24,27,41,43,47,50,57,58,60,81,84,85,86,98,128,143,152,154,155,183,187,197,208,211), ]
+
+
+
+
+//Put in console
+GDPLatinAmerica$`Country Name`<-NULL
+GDPLatinAmerica$`2018 [YR2018]`<-as.numeric(DPLatinAmerica$`2018 [YR2018]`)
+GDPLatinAmerica$`1990 [YR1990]`<-as.numeric(GDPLatinAmerica$`1990 [YR1990]`)
+GDPLatinAmerica$`2000 [YR2000]`<-as.numeric(GDPLatinAmerica$`2000 [YR2000]`)
+GDPLatinAmerica$`2009 [YR2009]`<-as.numeric(GDPLatinAmerica$`2009 [YR2009]`)
+GDPLatinAmerica$`2010 [YR2010]`<-as.numeric(GDPLatinAmerica$`2010 [YR2010]`)
+GDPLatinAmerica$`2011 [YR2011]`<-as.numeric(GDPLatinAmerica$`2011 [YR2011]`)
+GDPLatinAmerica$`2012 [YR2012]`<-as.numeric(GDPLatinAmerica$`2012 [YR2012]`)
+GDPLatinAmerica$`2013 [YR2013]`<-as.numeric(GDPLatinAmerica$`2013 [YR2013]`)
+GDPLatinAmerica$`2014 [YR2014]`<-as.numeric(GDPLatinAmerica$`2014 [YR2014]`)
+GDPLatinAmerica$`2015 [YR2015]`<-as.numeric(GDPLatinAmerica$`2015 [YR2015]`)
+GDPLatinAmerica$`2016 [YR2016]`<-as.numeric(GDPLatinAmerica$`2016 [YR2016]`)
+GDPLatinAmerica$`2017 [YR2017]`<-as.numeric(GDPLatinAmerica$`2017 [YR2017]`)
+GDPLatinAmerica[is.na(GDPLatinAmerica)]<-0
+
+//Back to R Script
+#logistic grpahs 
+#x-axis=gdp 
+#y-axis = 5 varibles
+
+#LatinAmerica<-worldhunger[c(33:35,74,76:79,88:98,105:108,151:165,178:183,192:199,207,226:239,251:256,293:299,311:328,362:381,492:498,541:546,576:578,582:598,626,687:689,733:735,774:780,787:807), ]
+
+#GDPLatinAmerica<-GDP_Data[c(8,17,20,24,27,41,43,47,50,57,58,60,81,84,85,86,98,128,143,152,154,155,183,187,197,208,211), ]
+
+xGDPLatinAmerica<-c(1990,2000,2009,2010,2011,2012,2013,2014,2015,2016,2017)
+
+yArg<-c(141352368715,284203750000,3.329765e+11,4.236274e+11,5.301633e+11,5.459824e+11,5.520251e+11,5.263197e+11,5.947493e+11,5.548609e+11,6.374303e+11)
+yBar<-c(2023318252,3121500000,4.479950e+09,4.529900e+09,4.660900e+09,4.656350e+09,4.612500e+09,4.608350e+09,4.584150e+09,4.529050e+09,4.673500e+09)
+yBel<-c(412086445,832072450,1.335218e+09,1.396732e+09,1.486596e+09,1.563828e+09,1.608442e+09,1.692956e+09,1.762500e+09,1.806646e+09,1.862615e+09)
+yBol<-c(4867582620,8397912509,1.733999e+10,1.964972e+10,2.396316e+10,2.708450e+10,3.065934e+10,3.299619e+10,3.300020e+10,3.394113e+10,3.750864e+10)
+yBra<-c(461951782000,655420645499,1.667020e+12,2.208872e+12,2.616202e+12,2.465189e+12,2.472807e+12,2.455994e+12,1.802214e+12,1.796275e+12,2.053595e+12)
+yChil<-c(33113887818,77860932152,1.723895e+11,2.185376e+11,2.522520e+11,2.671223e+11,2.783843e+11,2.605841e+11,2.439995e+11,2.500362e+11,2.770759e+11)
+yCol<-c(47844090710,99886577331,2.324941e+11,2.861036e+11,3.344540e+11,3.705744e+11,3.818666e+11,3.811121e+11,2.934817e+11,2.828561e+11,3.144576e+11)
+yCos<-c(5711687787,14949514493,3.056236e+10,3.726864e+10,4.226270e+10,4.647313e+10,4.974509e+10,5.057777e+10,5.477599e+10,5.715799e+10,5.728598e+10)
+yCub<-c(28645436569,30565400000,6.208000e+10,6.432800e+10,6.899000e+10,7.314100e+10,7.714800e+10,8.065600e+10,8.713300e+10,9.137000e+10,9.685100e+10)
+yDom<-c(7073675545,24305116729,4.837656e+10,5.398289e+10,5.781118e+10,6.065778e+10,6.266177e+10,6.606502e+10,6.880209e+10,7.234297e+10,7.593166e+10)
+yEcu<-c(15239278100,18327764882,6.251969e+10,6.955537e+10,7.927666e+10,8.792454e+10,9.512966e+10,1.017263e+11,9.929038e+10,9.993770e+10,1.042959e+11)
+yElS<-c(4817542204,11784927700,1.760162e+10,1.844792e+10,2.028378e+10,2.138615e+10,2.197740e+10,2.258584e+10,2.316603e+10,2.391223e+10,2.480544e+10)
+yGua<-c(7650125217,19288827159,3.773407e+10,4.133852e+10,4.765478e+10,5.038846e+10,5.385115e+10,5.872232e+10,6.376760e+10,6.866365e+10,7.562010e+10)
+yGuy<-c(396582263,712667897,2.061324e+09,2.273224e+09,2.576024e+09,2.861560e+09,2.987684e+09,3.077643e+09,3.197222e+09,3.504024e+09,3.621046e+09)
+yHai<-c(3096289800,3953846311,6.584649e+09,6.622542e+09,7.516834e+09,7.890217e+09,8.452509e+09,8.776351e+09,8.724656e+09,7.970649e+09,8.408151e+09)
+yHon<-c(4923009552,7103507989,1.458750e+10,1.583934e+10,1.771032e+10,1.852860e+10,1.849971e+10,1.975649e+10,2.097977e+10,2.164394e+10,2.297853e+10)
+yJam<-c(4592224067,8985352832,1.206748e+10,1.320029e+10,1.441336e+10,1.479872e+10,1.419301e+10,1.385219e+10,1.414547e+10,1.407214e+10,1.478111e+10)
+yMex<-c(261253582806,707906744575,9.000454e+11,1.057801e+12,1.180490e+12,1.201090e+12,1.274443e+12,1.314564e+12,1.170565e+12,1.077780e+12,1.150888e+12)
+yNic<-c(1009455484,5107329007,8.298695e+09,8.758622e+09,9.774317e+09,1.053200e+10,1.098297e+10,1.188044e+10,1.261109e+10,1.318499e+10,1.381426e+10)
+yPan<-c(6433967000,12304115000,2.711664e+10,2.944029e+10,3.468622e+10,4.042973e+10,4.559999e+10,4.992146e+10,5.409171e+10,5.795759e+10,6.228376e+10)
+yPar<-c(5812114523,8855705140,2.234175e+10,2.721597e+10,3.371552e+10,3.328323e+10,3.858532e+10,4.027653e+10,3.616407e+10,3.605428e+10,3.966740e+10)
+yPer<-c(26410386669,51744749133,1.208230e+11,1.475289e+11,1.717617e+11,1.926490e+11,2.012177e+11,2.010807e+11,1.899265e+11,1.916397e+11,2.113893e+11)
+yStL<-c(515979397,833537296,1.262873e+09,1.382055e+09,1.438007e+09,1.436447e+09,1.469796e+09,1.516577e+09,1.622437e+09,1.635675e+09,1.737504e+09)
+ySuN<-c(388400000,947671970,3.875556e+09,4.368398e+09,4.422646e+09,4.958566e+09,5.149557e+09,5.235212e+09,4.767415e+09,3.152174e+09,2.995828e+09)
+yTrAT<-c(5068000000,8154338233,1.917217e+10,2.215725e+10,2.536652e+10,2.560181e+10,2.657852e+10,2.720028e+10,2.440173e+10,2.229559e+10,2.207902e+10)
+yUrg<-c(9298839655,22823255802,3.166091e+10,4.028448e+10,4.796244e+10,5.126439e+10,5.753123e+10,5.723601e+10,5.327430e+10,5.268761e+10,5.615697e+10)
+yVen<-c(48598315565,117140723529,3.297876e+11,3.931924e+11,3.164822e+11,3.812862e+11,3.710054e+11,4.823593e+11,0.000000e+00,0.000000e+00,0.000000e+00)
+
+plot(xGDPLatinAmerica,yArg,type="o",col=1,pch=1,lty=1, ylim=c(min(GDPLatinAmerica),max(GDPLatinAmerica)), ylab="GDP",xlab="Years from 1990-2017",main="Region of Latin America" )
+
+#Barbados
+points(xGDPLatinAmerica,yBar,col=2,pch=2)
+lines(xGDPLatinAmerica,yBar,col=2,lty=2)
+#Belize
+points(xGDPLatinAmerica,yBel,col=3,pch=3)
+lines(xGDPLatinAmerica,yBel,col=3,lty=3)
+#Bolivia
+points(xGDPLatinAmerica,yBol,col=4,pch=4)
+lines(xGDPLatinAmerica,yBol,col=4,lty=4)
+#Brazil
+points(xGDPLatinAmerica,yBra,col=5,pch=5)
+lines(xGDPLatinAmerica,yBra,col=5,lty=5)
+#Chile
+points(xGDPLatinAmerica,yChil,col=6,pch=6)
+lines(xGDPLatinAmerica,yChil,col=6,lty=6)
+#Columbia
+points(xGDPLatinAmerica,yCol,col=7,pch=7)
+lines(xGDPLatinAmerica,yCol,col=7,lty=7)
+#Costa Rica
+points(xGDPLatinAmerica,yCos,col=8,pch=8)
+lines(xGDPLatinAmerica,yCos,col=8,lty=8)
+#Cuba
+points(xGDPLatinAmerica,yCub,col=9,pch=9)
+lines(xGDPLatinAmerica,yCub,col=9,lty=9)
+#Dom. Rep.
+points(xGDPLatinAmerica,yDom,col=10,pch=10)
+lines(xGDPLatinAmerica,yDom,col=10,lty=10)
+#Ecuador
+points(xGDPLatinAmerica,yEcu,col=11,pch=11)
+lines(xGDPLatinAmerica,yEcu,col=11,lty=11)
+#El Salvador
+points(xGDPLatinAmerica,yElS,col=12,pch=12)
+lines(xGDPLatinAmerica,yElS,col=12,lty=12)
+#Guatemala
+points(xGDPLatinAmerica,yGua,col=13,pch=13)
+lines(xGDPLatinAmerica,yGua,col=13,lty=13)
+#Guyana
+points(xGDPLatinAmerica,yGuy,col=14,pch=14)
+lines(xGDPLatinAmerica,yGuy,col=14,lty=14)
+#Haiti
+points(xGDPLatinAmerica,yHai,col=15,pch=15)
+lines(xGDPLatinAmerica,yHai,col=15,lty=15)
+#Honduras
+points(xGDPLatinAmerica,yHon,col=16,pch=16)
+lines(xGDPLatinAmerica,yHon,col=16,lty=16)
+#Jamacia
+points(xGDPLatinAmerica,yJam,col=17,pch=17)
+lines(xGDPLatinAmerica,yJam,col=17,lty=17)
+#Mexico
+points(xGDPLatinAmerica,yMex,col=18,pch=18)
+lines(xGDPLatinAmerica,yMex,col=18,lty=18)
+#Nicaguagua
+points(xGDPLatinAmerica,yNic,col=19,pch=19)
+lines(xGDPLatinAmerica,yNic,col=19,lty=19)
+#Panama
+points(xGDPLatinAmerica,yPan,col=20,pch=20)
+lines(xGDPLatinAmerica,yPan,col=20,lty=20)
+#Paraguay
+points(xGDPLatinAmerica,yPar,col=21,pch=21)
+lines(xGDPLatinAmerica,yPar,col=21,lty=21)
+#Peru
+points(xGDPLatinAmerica,yPer,col=22,pch=22)
+lines(xGDPLatinAmerica,yPer,col=22,lty=22)
+#St. Lucia
+points(xGDPLatinAmerica,yStL,col=23,pch=23)
+lines(xGDPLatinAmerica,yStL,col=23,lty=23)
+#Suri Name
+points(xGDPLatinAmerica,ySuN,col=24,pch=24)
+lines(xGDPLatinAmerica,ySuN,col=24,lty=24)
+#Trinidad & Tobago
+points(xGDPLatinAmerica,yTrAT,col=25,pch=25)
+lines(xGDPLatinAmerica,yTrAT,col=25,lty=25)
+#Uruguay
+points(xGDPLatinAmerica,yUrg,col=26,pch=26)
+lines(xGDPLatinAmerica,yUrg,col=26,lty=26)
+#Venezuela
+points(xGDPLatinAmerica,yVen,col=27,pch=27)
+lines(xGDPLatinAmerica,yVen,col=27,lty=27)
+
+legend(1993, 2.8e+12,legend=c("Argentina","Barbados","Belize","Bolivia","Brazil","Chile","Columbia","Costa Rica", "Cuba", "Dominican Republic"
+                              ,"Ecuador", "El Salvador", "Guatemala", "Guyana", "Haiti", "Honduras","Jamacia",
+                              "Mexico", "Nicaguagua", "Panama", "Paraguay", "Peru", "St. Lucia", "SuriName", "Trin&Toba",
+                              "Uruguay", "Venezuela"),
+       pch=1:27, cex = 0.6)

@@ -1,0 +1,1 @@
+plot(WorldHungerDataEastAsiaAndPacific$`Severe Wasting`~factor(WorldHungerDataEastAsiaAndPacific$Countries), ylab = "Severe Wasting Percentage", xlab = "Countries")

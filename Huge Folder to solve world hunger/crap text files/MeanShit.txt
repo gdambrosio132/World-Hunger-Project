@@ -1,0 +1,8 @@
+#Mean for East Asia
+Severe Wasting: 1.359259
+Wasting: 6.637037
+Overweight: 3.642963
+Stunting: 27.62444
+Underweight: 19.82667
+
+ 

@@ -1,0 +1,74 @@
+#Binomial Distribution
+Model1<-glm(Europe_Binomial$Country~Europe_Binomial$`Severe Wasting`,family=binomial)
+Seq1<-seq(min(Europe_Binomial$`Severe Wasting`),max(Europe_Binomial$`Severe Wasting`),by=0.01)
+
+#Get the intercept and slope
+Intercept1=Model1$coefficients[1]
+Slope1=Model1$coefficients[2]
+
+#Plot Model
+y1<-exp(Intercept1+Slope1*Seq1)/(1+exp(Intercept1+Slope1*Seq1))
+plot(Europe_Binomial$`Severe Wasting`,Europe_Binomial$Country,xlim = c(min(Europe_Binomial$`Severe Wasting`),max(Europe_Binomial$`Severe Wasting`)),ylim=c(0,1),col="brown",
+     xlab = "Severe Wasting",ylab = "Countries: 0=Montenegro, 1=Tajikistan",main = "The relationship of Severe Wasting in countries of Montenegro and Tajikistan")
+par(new=TRUE)
+lines(Seq1,y1,xlim=c(min(Europe_Binomial$`Severe Wasting`),max(Europe_Binomial$`Severe Wasting`)),ylim = c(0,1),col = "purple",xlab = " ", ylab=" ", main=" ")
+#####################################################################################################################################################################
+#Binomial Distribution
+Model2<-glm(Europe_Binomial$Country~Europe_Binomial$Wasting,family=binomial)
+Seq2<-seq(min(Europe_Binomial$Wasting),max(Europe_Binomial$Wasting),by=0.01)
+
+#Get the intercept and slope
+Intercept2=Model2$coefficients[1]
+Slope2=Model2$coefficients[2]
+
+#Plot Model
+y2<-exp(Intercept2+Slope2*Seq2)/(1+exp(Intercept2+Slope2*Seq2))
+plot(Europe_Binomial$Wasting,Europe_Binomial$Country,xlim = c(min(Europe_Binomial$Wasting),max(Europe_Binomial$Wasting)),ylim=c(0,1),col="brown",
+     xlab = "Wasting",ylab = "Countries: 0=Montenegro, 1=Tajikistan",main = "The relationship of Wasting in countries of Montenegro and Tajikistan")
+par(new=TRUE)
+lines(Seq2,y2,xlim=c(min(Europe_Binomial$Wasting),max(Europe_Binomial$Wasting)),ylim = c(0,1),col = "purple",xlab = " ", ylab=" ", main=" ")
+#####################################################################################################################################################################
+#Binomial Distribution
+Model3<-glm(Europe_Binomial$Country~Europe_Binomial$Overweight,family=binomial)
+Seq3<-seq(min(Europe_Binomial$Overweight),max(Europe_Binomial$Overweight),by=0.1)
+
+#Get the intercept and slope
+Intercept3=Model3$coefficients[1]
+Slope3=Model3$coefficients[2]
+
+#Plot Model
+y3<-exp(Intercept3+Slope3*Seq3)/(1+exp(Intercept3+Slope3*Seq3))
+plot(Europe_Binomial$Overweight,Europe_Binomial$Country,xlim = c(min(Europe_Binomial$Overweight),max(Europe_Binomial$Overweight)),ylim=c(0,1),col="brown",
+     xlab = "Overweight",ylab = "Countries: 0=Montenegro, 1=Tajikistan",main = "The relationship of Overweight in countries of Montenegro and Tajikistan")
+par(new=TRUE)
+lines(Seq3,y3,xlim=c(min(Europe_Binomial$Overweight),max(Europe_Binomial$Overweight)),ylim = c(0,1),col = "purple",xlab = " ", ylab=" ", main=" ")
+#####################################################################################################################################################################
+#Binomial Distribution
+Model4<-glm(Europe_Binomial$Country~Europe_Binomial$Stunting,family=binomial)
+Seq4<-seq(min(Europe_Binomial$Stunting),max(Europe_Binomial$Stunting),by=0.1)
+
+#Get the intercept and slope
+Intercept4=Model4$coefficients[1]
+Slope4=Model4$coefficients[2]
+
+#Plot Model
+y4<-exp(Intercept4+Slope4*Seq4)/(1+exp(Intercept4+Slope4*Seq4))
+plot(Europe_Binomial$Stunting,Europe_Binomial$Country,xlim = c(min(Europe_Binomial$Stunting),max(Europe_Binomial$Stunting)),ylim=c(0,1),col="brown",
+     xlab = "Stunting",ylab = "Countries: 0=Montenegro, 1=Tajikistan",main = "The relationship of Stunting in countries of Montenegro and Tajikistan")
+par(new=TRUE)
+lines(Seq4,y4,xlim=c(min(Europe_Binomial$Stunting),max(Europe_Binomial$Stunting)),ylim = c(0,1),col = "purple",xlab = " ", ylab=" ", main=" ")
+#####################################################################################################################################################################
+#Binomial Distribution
+Model5<-glm(Europe_Binomial$Country~Europe_Binomial$Underweight,family=binomial)
+Seq5<-seq(min(Europe_Binomial$Underweight),max(Europe_Binomial$Underweight),by=0.01)
+
+#Get the intercept and slope
+Intercept5=Model5$coefficients[1]
+Slope5=Model5$coefficients[2]
+
+#Plot Model
+y5<-exp(Intercept5+Slope5*Seq5)/(1+exp(Intercept5+Slope5*Seq5))
+plot(Europe_Binomial$Underweight,Europe_Binomial$Country,xlim = c(min(Europe_Binomial$Underweight),max(Europe_Binomial$Underweight)),ylim=c(0,1),col="brown",
+     xlab = "Underweight",ylab = "Countries: 0=Montenegro, 1=Tajikistan",main = "The relationship of Underweight in countries of Montenegro and Tajikistan")
+par(new=TRUE)
+lines(Seq5,y5,xlim=c(min(Europe_Binomial$Underweight),max(Europe_Binomial$Underweight)),ylim = c(0,1),col = "purple",xlab = " ", ylab=" ", main=" ")

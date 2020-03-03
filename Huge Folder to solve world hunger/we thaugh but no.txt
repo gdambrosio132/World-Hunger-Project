@@ -1,0 +1,69 @@
+LatinAmerica.GDP.Severe<-cbind(Latin_America_test_data$GDP,Latin_America_test_data$`Severe wasting`)
+plot(LatinAmerica.GDP.Severe,main="GDP Vs Severe Wasting in Latin America",xlab = "GDP", ylab = "Severe Wasting Percentage")
+abline(lm(Latin_America_test_data$`Severe wasting`~Latin_America_test_data$GDP),col="Blue")
+lines(Latin_America_test_data$GDP,Latin_America_test_data$`Severe wasting`,col="red")
+
+
+LatinAmerica.GDP.Wasting<-cbind(Latin_America_test_data$GDP,Latin_America_test_data$Wasting)
+plot(LatinAmerica.GDP.Wasting,main = "GDP VS Wasting in Latin America", xlab = "GDP", ylab = "Wasting Percentage")
+abline(lm(Latin_America_test_data$Wasting~Latin_America_test_data$GDP),col="Blue")
+
+plot(LatinAmerica.GDP.Wasting,main="GDP Vs Wasting in Latin America",xlab = "GDP", ylab = "Wasting Percentage", type = "b")
+axis(1,at=Latin_America_test_data$GDP,labels = Latin_America_test_data$GDP)
+lines(Latin_America_test_data$GDP,Latin_America_test_data$Wasting,col="red")
+
+LatinAmerica.GDP.Overweight<-cbind(Latin_America_test_data$GDP,Latin_America_test_data$Overweight)
+plot(LatinAmerica.GDP.Overweight,main = "GDP VS Overweight in Latin America", xlab = "GDP", ylab = "Overweight Percentage")
+abline(lm(Latin_America_test_data$Overweight~Latin_America_test_data$GDP),col="Blue")
+
+LatinAmerica.GDP.Stunting<-cbind(Latin_America_test_data$GDP,Latin_America_test_data$Stunting)
+plot(LatinAmerica.GDP.Stunting,main = "GDP VS Stunting in Latin America", xlab = "GDP", ylab = "Stunting Percentage")
+abline(lm(Latin_America_test_data$Stunting~Latin_America_test_data$GDP),col="Blue")
+
+LatinAmerica.GDP.Underweight<-cbind(Latin_America_test_data$GDP,Latin_America_test_data$Underweight)
+plot(LatinAmerica.GDP.Underweight,main = "GDP VS Underweight in Latin America", xlab = "GDP", ylab = "Underweight Percentage")
+abline(lm(Latin_America_test_data$Underweight~Latin_America_test_data$GDP),col="Blue")
+
+##############################################################################################################################
+
+AfricaGDPTest.GDP.Severe<-cbind(AfricaGDPTest$GDP,AfricaGDPTest$`Severe wasting`)
+plot(AfricaGDPTest.GDP.Severe,main = "GDP VS Severe Wasting in Sub Saharan Africa", xlab = "GDP", ylab = "Severe Wasting Percentage")
+abline(lm(AfricaGDPTest$`Severe wasting`~AfricaGDPTest$GDP),col="Blue")
+
+AfricaGDPTest.GDP.Wasting<-cbind(AfricaGDPTest$GDP,AfricaGDPTest$Wasting)
+plot(AfricaGDPTest.GDP.Wasting,main = "GDP VS Wasting in Sub Saharan Africa", xlab = "GDP", ylab = "Wasting Percentage")
+abline(lm(AfricaGDPTest$Wasting~AfricaGDPTest$GDP),col="Blue")
+
+AfricaGDPTest.GDP.Overweight<-cbind(AfricaGDPTest$GDP,AfricaGDPTest$Overweight)
+plot(AfricaGDPTest.GDP.Overweight,main = "GDP VS Overweight in Sub Saharan Africa", xlab = "GDP", ylab = "Overweight Percentage")
+abline(lm(AfricaGDPTest$Overweight~AfricaGDPTest$GDP),col="Blue")
+
+AfricaGDPTest.GDP.Stunting<-cbind(AfricaGDPTest$GDP,AfricaGDPTest$Stunting)
+plot(AfricaGDPTest.GDP.Stunting,main = "GDP VS Stunting in Sub Saharan Africa", xlab = "GDP", ylab = "Stunting Percentage")
+abline(lm(AfricaGDPTest$Stunting~AfricaGDPTest$GDP),col="Blue")
+
+AfricaGDPTest.GDP.Underweight<-cbind(AfricaGDPTest$GDP,AfricaGDPTest$Underweight)
+plot(AfricaGDPTest.GDP.Underweight,main = "GDP VS Underweight in Sub Saharan Africa", xlab = "GDP", ylab = "Underweight Percentage")
+abline(lm(AfricaGDPTest$Underweight~AfricaGDPTest$GDP),col="Blue")
+
+##############################################################################################################################
+
+MiddleEastTest.GDP.Severe<-cbind(MiddleEastTest$GDP,MiddleEastTest$`Severe wasting`)
+plot(MiddleEastTest.GDP.Severe,main="GDP VS Severe Wasting in Middle East & North Africa",xlab = "GDP",ylab = "Severe Wasting Percentage")
+abline(lm(MiddleEastTest$`Severe wasting`~MiddleEastTest$GDP),col="Blue")
+
+MiddleEastTest.GDP.Wasting<-cbind(MiddleEastTest$GDP,MiddleEastTest$Wasting)
+plot(MiddleEastTest.GDP.Wasting,main="GDP VS Wasting in Middle East & North Africa",xlab = "GDP",ylab = "Wasting Percentage")
+abline(lm(MiddleEastTest$Wasting~MiddleEastTest$GDP),col="Blue")
+
+MiddleEastTest.GDP.Overweight<-cbind(MiddleEastTest$GDP,MiddleEastTest$Overweight)
+plot(MiddleEastTest.GDP.Overweight,main="GDP VS Overweight in Middle East & North Africa",xlab = "GDP",ylab = "Overweight Percentage")
+abline(lm(MiddleEastTest$Overweight~MiddleEastTest$GDP),col="Blue")
+
+MiddleEastTest.GDP.Stunting<-cbind(MiddleEastTest$GDP,MiddleEastTest$Stunting)
+plot(MiddleEastTest.GDP.Stunting,main="GDP VS Stunting in Middle East & North Africa",xlab = "GDP",ylab = "Stunting Percentage")
+abline(lm(MiddleEastTest$Stunting~MiddleEastTest$GDP),col="Blue")
+
+MiddleEastTest.GDP.Underweight<-cbind(MiddleEastTest$GDP,MiddleEastTest$Underweight)
+plot(MiddleEastTest.GDP.Underweight,main="GDP VS Underweight in Middle East & North Africa",xlab = "GDP",ylab = "Underweight Percentage")
+abline(lm(MiddleEastTest$Underweight~MiddleEastTest$GDP),col="Blue")

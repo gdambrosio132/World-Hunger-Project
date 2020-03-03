@@ -1,0 +1,119 @@
+> GDPMiddleEast$`1990 [YR1990]`<-as.numeric(GDPMiddleEast$`1990 [YR1990]`)
+Warning message:
+NAs introduced by coercion 
+> GDPMiddleEast$`2000 [YR2000]`<-as.numeric(GDPMiddleEast$`2000 [YR2000]`)
+Warning message:
+NAs introduced by coercion 
+> GDPMiddleEast$`2009 [YR2009]`<-as.numeric(GDPMiddleEast$`2009 [YR2009]`)
+Warning message:
+NAs introduced by coercion 
+> GDPMiddleEast$`2010 [YR2010]`<-as.numeric(GDPMiddleEast$`2010 [YR2010]`)
+Warning message:
+NAs introduced by coercion 
+> GDPMiddleEast$`2011 [YR2011]`<-as.numeric(GDPMiddleEast$`2011 [YR2011]`)
+Warning message:
+NAs introduced by coercion 
+> GDPMiddleEast$`2012 [YR2012]`<-as.numeric(GDPMiddleEast$`2012 [YR2012]`)
+Warning message:
+NAs introduced by coercion 
+> GDPMiddleEast$`2013 [YR2013]`<-as.numeric(GDPMiddleEast$`2013 [YR2013]`)
+Warning message:
+NAs introduced by coercion 
+> GDPMiddleEast$`2014 [YR2014]`<-as.numeric(GDPMiddleEast$`2014 [YR2014]`)
+Warning message:
+NAs introduced by coercion 
+> GDPMiddleEast$`2015 [YR2015]`<-as.numeric(GDPMiddleEast$`2015 [YR2015]`)
+Warning message:
+NAs introduced by coercion 
+> GDPMiddleEast$`2016 [YR2016]`<-as.numeric(GDPMiddleEast$`2016 [YR2016]`)
+Warning message:
+NAs introduced by coercion 
+> GDPMiddleEast$`2017 [YR2017]`<-as.numeric(GDPMiddleEast$`2017 [YR2017]`)
+Warning message:
+NAs introduced by coercion 
+> GDPMiddleEast[is.na(GDPMiddleEast)]<-0
+
+#Middle East Shit
+#MiddleEastAndNorthAfrica<-worldhunger[c(23:29,49:50,221:225,240:250,352:361,383:387,404:419,430:431,442:443,508:512,564:568,609,634:635,695:700,736:740,826:836), ]
+
+#GDPMiddleEast<-GDP_Data[c(3,15,55,59,92,93,100,107,111,114,134,149,160,167,190,198,214,215), ]
+
+xGDPMiddleEast<-c(1990,2000,2009,2010,2011,2012,2013,2014,2015,2016,2017)
+
+yAlg<-c(62045099643,54790245601,137211039898,161207268655,200019057308,209058991952,209755003251,213810022462,165979277277,160129866570,167555280113)
+yBah<-c(4229787234,9062906915,22938218085,25713271277,28776595745,30749308511,32539547872,33387712766,31125851064,32250132979,35432686170)
+yDji<-c(452328087,551230862,1049110685,1128611700,1239144502,1353632942,1324733712,1455035089,1633741923,1764268469,1844674435)
+yEgy<-c(42978914311,99838543960,188982374701,218888324505,236001858960,279372758362,288586231502,305529656458,332698041031,332927833278,235369129338)
+yIra<-c(124813263926,109591707802,414059094949,487069570464,583500357530,598853401276,467414852231,434474616832,385874474399,418976679729,454012768724)
+yIrq<-c(179885815375,0,111660855043,138516722650,185749664444,218000986223,234648370497,234648370497,177498577313,170559560068,192060810811)
+yJor<-c(4160003917,8460424401,23820230000,26425379437,28840263380,30937277606,33593843662,35826925775,37517410282,38654727746,40068308451)
+yKuw<-c(18427777778,37711864407,105899930507,115419050942,154027536232,174070025009,174161142454,162631412509,114567298106,110912280702,120126277613)
+yLeb<-c(2838485354,17260364842,35477299024,38419626605,40075674163,44047334184,46471385850,48524603055,49910270062,51483909755,53576985687)
+yLib<-c(28901836158,38270206950,63028320702,74773444901,34699395524,81873662519,65502870174,41142722414,27842131486,26221660076,38107728083)
+yMor<-c(30180108562,38857251336,92897320376,93216746662,101370474295,98266306615,106825649872,110081248587,101179808076,103345296967,109708728849)
+yOma<-c(11685045514,19507412224,48388296489,58642392718,67937581274,76689206762,78784395319,81076723017,68921456437,65941482445,70783875163)
+yQua<-c(7360439423,17759890110,97798351648,125122306346,167775274725,186833516484,198727747253,206224725275,161739835165,151732142857,166928571429)
+ySaAr<-c(117630271802,189514926213,429097866667,528207200000,671238840107,735974843360,746647127413,756350347333,654269902880,644935541440,686738400000)
+ySyr<-c(12308624284,19325894913,0,0,0,0,0,0,0,0,0)
+yTun<-c(12290568182,21473188882,43454935940,44050929160,45810626509,45044112939,46251061734,47632326088,43152528548,41808379888,39952095561)
+yWeGa<-c(0,4313600000,7268200000,8913100000,10465400000,11279400000,12476000000,12715600000,12673000000,13425700000,14498100000)
+yYem<-c(5647119229,9652436180,25130274124,30906749533,32726417878,35401339869,40415233436,43228583935,45593573381,36436652465,31267675216)
+
+plot(xGDPMiddleEast,yAlg,type="o",col=1,pch=1,lty=1, ylim=c(min(GDPMiddleEast),max(GDPMiddleEast)), ylab="GDP",xlab="Years from 1990-2017",main="Region of Middle East and North Africa" )
+
+points(xGDPMiddleEast,yBah,col=2,pch=2)
+lines(xGDPMiddleEast,yBah,col=2,lty=2)
+#Bahrain
+points(xGDPMiddleEast,yDji,col=3,pch=3)
+lines(xGDPMiddleEast,yDji,col=3,lty=3)
+#Djibouti
+points(xGDPMiddleEast,yEgy,col=4,pch=4)
+lines(xGDPMiddleEast,yEgy,col=4,lty=4)
+#Egypt
+points(xGDPMiddleEast,yIra,col=5,pch=5)
+lines(xGDPMiddleEast,yIra,col=5,lty=5)
+#Iran
+points(xGDPMiddleEast,yIrq,col=6,pch=6)
+lines(xGDPMiddleEast,yIrq,col=6,lty=6)
+#Iraq
+points(xGDPMiddleEast,yJor,col=7,pch=7)
+lines(xGDPMiddleEast,yJor,col=7,lty=7)
+#Jordan
+points(xGDPMiddleEast,yKuw,col=8,pch=8)
+lines(xGDPMiddleEast,yKuw,col=8,lty=8)
+#Kuwait
+points(xGDPMiddleEast,yLeb,col=9,pch=9)
+lines(xGDPMiddleEast,yLeb,col=9,lty=9)
+#Lebanon
+points(xGDPMiddleEast,yLib,col=10,pch=10)
+lines(xGDPMiddleEast,yLib,col=10,lty=10)
+#Libya
+points(xGDPMiddleEast,yLeb,col=11,pch=11)
+lines(xGDPMiddleEast,yLeb,col=11,lty=11)
+#Morocco
+points(xGDPMiddleEast,yMor,col=12,pch=12)
+lines(xGDPMiddleEast,yMor,col=12,lty=12)
+#Oman
+points(xGDPMiddleEast,yOma,col=13,pch=13)
+lines(xGDPMiddleEast,yOma,col=13,lty=13)
+#Quatar
+points(xGDPMiddleEast,yQua,col=14,pch=14)
+lines(xGDPMiddleEast,yQua,col=14,lty=14)
+#Saudi Arabia
+points(xGDPMiddleEast,ySaAr,col=15,pch=15)
+lines(xGDPMiddleEast,ySaAr,col=15,lty=15)
+#Syrian Arab Republic
+points(xGDPMiddleEast,ySyr,col=16,pch=16)
+lines(xGDPMiddleEast,ySyr,col=16,lty=16)
+#Tunisia
+points(xGDPMiddleEast,yTun,col=17,pch=17)
+lines(xGDPMiddleEast,yTun,col=17,lty=17)
+#West Bank
+points(xGDPMiddleEast,yYem,col=18,pch=18)
+lines(xGDPMiddleEast,yYem,col=18,lty=18)
+#Yemen
+
+legend(1993, 6.8e+11,legend=c("Algeria","Bahrain","Djibouti","Egypt","Iran","Iraq","Jordan","Kuwait", "Lebanon", "Libya"
+                              ,"Morocco", "Oman", "Quatar", "Saudi Arabia", "Syrian Arab Rep.", "Tunisia","West Bank & Gaza",
+                              "Yemen"),
+       pch=1:18, cex = 0.6)

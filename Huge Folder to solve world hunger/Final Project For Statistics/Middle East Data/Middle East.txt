@@ -1,0 +1,61 @@
+WorldHungerMiddleEastAndNorthAfrica<-WorldHungerMiddleEastAndNorthAfrica[c(23:29,49:50,221:225,240:250,352:361,383:387,404:419,430:431,442:443,508:512,564:568,609,634:635,695:700,736:740,826:836), ]
+
+
+WorldHungerMiddleEastAndNorthAfrica$...1<-NULL
+WorldHungerMiddleEastAndNorthAfrica$...3<-NULL
+WorldHungerMiddleEastAndNorthAfrica$...5<-NULL
+WorldHungerMiddleEastAndNorthAfrica$...6<-NULL
+WorldHungerMiddleEastAndNorthAfrica$...7<-NULL
+WorldHungerMiddleEastAndNorthAfrica$...8<-NULL
+WorldHungerMiddleEastAndNorthAfrica$...9<-NULL
+WorldHungerMiddleEastAndNorthAfrica$...12<-NULL
+WorldHungerMiddleEastAndNorthAfrica$...13<-NULL
+WorldHungerMiddleEastAndNorthAfrica$...14<-NULL
+WorldHungerMiddleEastAndNorthAfrica$...21<-NULL
+WorldHungerMiddleEastAndNorthAfrica$...22<-NULL
+WorldHungerMiddleEastAndNorthAfrica$...23<-NULL
+
+
+colnames(WorldHungerMiddleEastAndNorthAfrica)[colnames(WorldHungerMiddleEastAndNorthAfrica)=="...2"]<-"Countries"
+colnames(WorldHungerMiddleEastAndNorthAfrica)[colnames(WorldHungerMiddleEastAndNorthAfrica)=="...4"]<-"Survey Year"
+colnames(WorldHungerMiddleEastAndNorthAfrica)[colnames(WorldHungerMiddleEastAndNorthAfrica)=="...10"]<-"Income Group"
+colnames(WorldHungerMiddleEastAndNorthAfrica)[colnames(WorldHungerMiddleEastAndNorthAfrica)=="...11"]<-"Region"
+colnames(WorldHungerMiddleEastAndNorthAfrica)[colnames(WorldHungerMiddleEastAndNorthAfrica)=="...15"]<-"Survey Sample Size"
+colnames(WorldHungerMiddleEastAndNorthAfrica)[colnames(WorldHungerMiddleEastAndNorthAfrica)=="...16"]<-"Severe Wasting"
+colnames(WorldHungerMiddleEastAndNorthAfrica)[colnames(WorldHungerMiddleEastAndNorthAfrica)=="...17"]<-"Wasting"
+colnames(WorldHungerMiddleEastAndNorthAfrica)[colnames(WorldHungerMiddleEastAndNorthAfrica)=="...18"]<-"Overweight"
+colnames(WorldHungerMiddleEastAndNorthAfrica)[colnames(WorldHungerMiddleEastAndNorthAfrica)=="...19"]<-"Stunting"
+colnames(WorldHungerMiddleEastAndNorthAfrica)[colnames(WorldHungerMiddleEastAndNorthAfrica)=="...20"]<-"Underweight"
+colnames(WorldHungerMiddleEastAndNorthAfrica)[colnames(WorldHungerMiddleEastAndNorthAfrica)=="...24"]<-"Under 5 population (000s)"
+
+----------------------------------------------------------------R Script-------------------------------------------------------------------
+plot(WorldHungerMiddleEastAndNorthAfrica$`Severe Wasting`)
+plot(WorldHungerMiddleEastAndNorthAfrica$Wasting)
+plot(WorldHungerMiddleEastAndNorthAfrica$Overweight)
+plot(WorldHungerMiddleEastAndNorthAfrica$Stunting)
+plot(WorldHungerMiddleEastAndNorthAfrica$Underweight)
+
+linmod1<-lm(WorldHungerMiddleEastAndNorthAfrica$`Severe Wasting`~WorldHungerMiddleEastAndNorthAfrica$Countries)
+residual1<-resid(linmod1)
+plot(residual1)
+abline(0,0)
+
+linmod2<-lm(WorldHungerMiddleEastAndNorthAfrica$Wasting~WorldHungerMiddleEastAndNorthAfrica$Countries)
+residual2<-resid(linmod2)
+plot(residual2)
+abline(0,0)
+
+linmod3<-lm(WorldHungerMiddleEastAndNorthAfrica$Overweight~WorldHungerMiddleEastAndNorthAfrica$Countries)
+residual3<-resid(linmod3)
+plot(residual3)
+abline(0,0)
+
+linmod4<-lm(WorldHungerMiddleEastAndNorthAfrica$Stunting~WorldHungerMiddleEastAndNorthAfrica$Countries)
+residual4<-resid(linmod4)
+plot(residual4)
+abline(0,0)
+
+linmod5<-lm(WorldHungerMiddleEastAndNorthAfrica$Underweight~WorldHungerMiddleEastAndNorthAfrica$Countries)
+residual5<-resid(linmod5)
+plot(residual5)
+abline(0,0)

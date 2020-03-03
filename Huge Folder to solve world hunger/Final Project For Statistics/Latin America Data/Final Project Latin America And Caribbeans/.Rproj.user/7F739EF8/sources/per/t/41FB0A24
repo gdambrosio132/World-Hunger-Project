@@ -1,0 +1,29 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1555953437948.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "41FB0A24",
+    "lastKnownWriteTime" : 0,
+    "last_content_update" : 1555953437948,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "BE54E891",
+        "caption" : "WorldHungerLatinAmericaAndCaribbeans",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=WorldHungerLatinAmericaAndCaribbeans&cache_key=BE54E891",
+        "displayedObservations" : 852,
+        "environment" : "",
+        "object" : "WorldHungerLatinAmericaAndCaribbeans",
+        "preview" : 0,
+        "totalObservations" : 852,
+        "variables" : 24
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

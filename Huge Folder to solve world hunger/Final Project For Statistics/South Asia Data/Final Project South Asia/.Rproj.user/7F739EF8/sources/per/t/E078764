@@ -1,0 +1,29 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1555945804168.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "E078764",
+    "lastKnownWriteTime" : 7812735372087402593,
+    "last_content_update" : 1555945804168,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "56AC988A",
+        "caption" : "WorldHungerSouthAsia",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=WorldHungerSouthAsia&cache_key=56AC988A",
+        "displayedObservations" : 852,
+        "environment" : "",
+        "object" : "WorldHungerSouthAsia",
+        "preview" : 0,
+        "totalObservations" : 852,
+        "variables" : 24
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

@@ -1,0 +1,133 @@
+!!!!Make sure you download the dataset I've sent you as an excel file and rename it to: GDP Data
+
+1.
+//just put this in the r script
+//this is for the averages of each region
+
+GDPEastAsiaAvg<-GDP_Data[c(222),]
+GDPEuropeAvg<-GDP_Data[c(226),]
+GDPLatinAmericaAvg<-GDP_Data[c(239),]
+GDPMiddleEastAvg<-GDP_Data[c(246),]
+GDPSouthAsiaAvg<-GDP_Data[c(258),]
+GDPAfricaAvg<-GDP_Data[c(260),]
+
+
+
+//run the code above first
+//then comment it out
+//next go into your console and type the following lines of code for East Asia
+
+GDPEastAsiaAvg$`Country Name`<-NULL
+GDpEastAsiaAvg$`2018 [YR2018]`<-NULL
+GDPEastAsiaAvg$`1990 [YR1990]`<-as.numeric(GDPEastAsiaAvg$`1990 [YR1990]`)
+GDPEastAsiaAvg$`2000 [YR2000]`<-as.numeric(GDPEastAsiaAvg$`2000 [YR2000]`)
+GDPEastAsiaAvg$`2009 [YR2009]`<-as.numeric(GDPEastAsiaAvg$`2009 [YR2009]`)
+GDPEastAsiaAvg$`2010 [YR2010]`<-as.numeric(GDPEastAsiaAvg$`2010 [YR2010]`)
+GDPEastAsiaAvg$`2011 [YR2011]`<-as.numeric(GDPEastAsiaAvg$`2011 [YR2011]`)
+GDPEastAsiaAvg$`2012 [YR2012]`<-as.numeric(GDPEastAsiaAvg$`2012 [YR2012]`)
+GDPEastAsiaAvg$`2013 [YR2013]`<-as.numeric(GDPEastAsiaAvg$`2013 [YR2013]`)
+GDPEastAsiaAvg$`2014 [YR2014]`<-as.numeric(GDPEastAsiaAvg$`2014 [YR2014]`)
+GDPEastAsiaAvg$`2015 [YR2015]`<-as.numeric(GDPEastAsiaAvg$`2015 [YR2015]`)
+GDPEastAsiaAvg$`2016 [YR2016]`<-as.numeric(GDPEastAsiaAvg$`2016 [YR2016]`)
+GDPEastAsiaAvg$`2017 [YR2017]`<-as.numeric(GDPEastAsiaAvg$`2017 [YR2017]`)
+
+//you repeat these for the other regions, here is a copy and paste for the other regions
+//You can only put one code at a time so this will take a while
+
+//Europe
+GDPEuropeAvg$`Country Name`<-NULL
+GDPEuropeAvg$`2018 [YR2018]`<-NULL
+GDPEuropeAvg$`1990 [YR1990]`<-as.numeric(GDPEuropeAvg$`1990 [YR1990]`)
+GDPEuropeAvg$`2000 [YR2000]`<-as.numeric(GDPEuropeAvg$`2000 [YR2000]`)
+GDPEuropeAvg$`2009 [YR2009]`<-as.numeric(GDPEuropeAvg$`2009 [YR2009]`)
+GDPEuropeAvg$`2010 [YR2010]`<-as.numeric(GDPEuropeAvg$`2010 [YR2010]`)
+GDPEuropeAvg$`2011 [YR2011]`<-as.numeric(GDPEuropeAvg$`2011 [YR2011]`)
+GDPEuropeAvg$`2012 [YR2012]`<-as.numeric(GDPEuropeAvg$`2012 [YR2012]`)
+GDPEuropeAvg$`2013 [YR2013]`<-as.numeric(GDPEuropeAvg$`2013 [YR2013]`)
+GDPEuropeAvg$`2014 [YR2014]`<-as.numeric(GDPEuropeAvg$`2014 [YR2014]`)
+GDPEuropeAvg$`2015 [YR2015]`<-as.numeric(GDPEuropeAvg$`2015 [YR2015]`)
+GDPEuropeAvg$`2016 [YR2016]`<-as.numeric(GDPEuropeAvg$`2016 [YR2016]`)
+GDPEuropeAvg$`2017 [YR2017]`<-as.numeric(GDPEuropeAvg$`2017 [YR2017]`)
+
+//Latin America
+GDPLatinAmericaAvg$`Country Name`<-NULL
+GDPLatinAmericaAvg$`2018 [YR2018]`<-NULL
+GDPLatinAmericaAvg$`1990 [YR1990]`<-as.numeric(GDPLatinAmericaAvg$`1990 [YR1990]`)
+GDPLatinAmericaAvg$`2000 [YR2000]`<-as.numeric(GDPLatinAmericaAvg$`2000 [YR2000]`)
+GDPLatinAmericaAvg$`2009 [YR2009]`<-as.numeric(GDPLatinAmericaAvg$`2009 [YR2009]`)
+GDPLatinAmericaAvg$`2010 [YR2010]`<-as.numeric(GDPLatinAmericaAvg$`2010 [YR2010]`)
+GDPLatinAmericaAvg$`2011 [YR2011]`<-as.numeric(GDPLatinAmericaAvg$`2011 [YR2011]`)
+GDPLatinAmericaAvg$`2012 [YR2012]`<-as.numeric(GDPLatinAmericaAvg$`2012 [YR2012]`)
+GDPLatinAmericaAvg$`2013 [YR2013]`<-as.numeric(GDPLatinAmericaAvg$`2013 [YR2013]`)
+GDPLatinAmericaAvg$`2014 [YR2014]`<-as.numeric(GDPLatinAmericaAvg$`2014 [YR2014]`)
+GDPLatinAmericaAvg$`2015 [YR2015]`<-as.numeric(GDPLatinAmericaAvg$`2015 [YR2015]`)
+GDPLatinAmericaAvg$`2016 [YR2016]`<-as.numeric(GDPLatinAmericaAvg$`2016 [YR2016]`)
+GDPLatinAmericaAvg$`2017 [YR2017]`<-as.numeric(GDPLatinAmericaAvg$`2017 [YR2017]`)
+
+//Middle East
+GDPMiddleEastAvg$`Country Name`<-NULL
+GDPMiddleEastAvg$`2018 [YR2018]`<-NULL
+GDPMiddleEastAvg$`1990 [YR1990]`<-as.numeric(GDPMiddleEastAvg$`1990 [YR1990]`)
+GDPMiddleEastAvg$`2000 [YR2000]`<-as.numeric(GDPMiddleEastAvg$`2000 [YR2000]`)
+GDPMiddleEastAvg$`2009 [YR2009]`<-as.numeric(GDPMiddleEastAvg$`2009 [YR2009]`)
+GDPMiddleEastAvg$`2010 [YR2010]`<-as.numeric(GDPMiddleEastAvg$`2010 [YR2010]`)
+GDPMiddleEastAvg$`2011 [YR2011]`<-as.numeric(GDPMiddleEastAvg$`2011 [YR2011]`)
+GDPMiddleEastAvg$`2012 [YR2012]`<-as.numeric(GDPMiddleEastAvg$`2012 [YR2012]`)
+GDPMiddleEastAvg$`2013 [YR2013]`<-as.numeric(GDPMiddleEastAvg$`2013 [YR2013]`)
+GDPMiddleEastAvg$`2014 [YR2014]`<-as.numeric(GDPMiddleEastAvg$`2014 [YR2014]`)
+GDPMiddleEastAvg$`2015 [YR2015]`<-as.numeric(GDPMiddleEastAvg$`2015 [YR2015]`)
+GDPMiddleEastAvg$`2016 [YR2016]`<-as.numeric(GDPMiddleEastAvg$`2016 [YR2016]`)
+GDPMiddleEastAvg$`2017 [YR2017]`<-as.numeric(GDPMiddleEastAvg$`2017 [YR2017]`)
+
+//South Asia
+GDPSouthAsiaAvg$`Country Name`<-NULL
+GDPSouthAsiaAvg$`2018 [YR2018]`<-NULL
+GDPSouthAsiaAvg$`1990 [YR1990]`<-as.numeric(GDPSouthAsiaAvg$`1990 [YR1990]`)
+GDPSouthAsiaAvg$`2000 [YR2000]`<-as.numeric(GDPSouthAsiaAvg$`2000 [YR2000]`)
+GDPSouthAsiaAvg$`2009 [YR2009]`<-as.numeric(GDPSouthAsiaAvg$`2009 [YR2009]`)
+GDPSouthAsiaAvg$`2010 [YR2010]`<-as.numeric(GDPSouthAsiaAvg$`2010 [YR2010]`)
+GDPSouthAsiaAvg$`2011 [YR2011]`<-as.numeric(GDPSouthAsiaAvg$`2011 [YR2011]`)
+GDPSouthAsiaAvg$`2012 [YR2012]`<-as.numeric(GDPSouthAsiaAvg$`2012 [YR2012]`)
+GDPSouthAsiaAvg$`2013 [YR2013]`<-as.numeric(GDPSouthAsiaAvg$`2013 [YR2013]`)
+GDPSouthAsiaAvg$`2014 [YR2014]`<-as.numeric(GDPSouthAsiaAvg$`2014 [YR2014]`)
+GDPSouthAsiaAvg$`2015 [YR2015]`<-as.numeric(GDPSouthAsiaAvg$`2015 [YR2015]`)
+GDPSouthAsiaAvg$`2016 [YR2016]`<-as.numeric(GDPSouthAsiaAvg$`2016 [YR2016]`)
+GDPSouthAsiaAvg$`2017 [YR2017]`<-as.numeric(GDPSouthAsiaAvg$`2017 [YR2017]`)
+
+//Africa
+GDPAfricaAvg$`Country Name`<-NULL
+GDPAfricaAvg$`2018 [YR2018]`<-NULL
+GDPAfricaAvg$`1990 [YR1990]`<-as.numeric(GDPAfricaAvg$`1990 [YR1990]`)
+GDPAfricaAvg$`2000 [YR2000]`<-as.numeric(GDPAfricaAvg$`2000 [YR2000]`)
+GDPAfricaAvg$`2009 [YR2009]`<-as.numeric(GDPAfricaAvg$`2009 [YR2009]`)
+GDPAfricaAvg$`2010 [YR2010]`<-as.numeric(GDPAfricaAvg$`2010 [YR2010]`)
+GDPAfricaAvg$`2011 [YR2011]`<-as.numeric(GDPAfricaAvg$`2011 [YR2011]`)
+GDPAfricaAvg$`2012 [YR2012]`<-as.numeric(GDPAfricaAvg$`2012 [YR2012]`)
+GDPAfricaAvg$`2013 [YR2013]`<-as.numeric(GDPAfricaAvg$`2013 [YR2013]`)
+GDPAfricaAvg$`2014 [YR2014]`<-as.numeric(GDPAfricaAvg$`2014 [YR2014]`)
+GDPAfricaAvg$`2015 [YR2015]`<-as.numeric(GDPAfricaAvg$`2015 [YR2015]`)
+GDPAfricaAvg$`2016 [YR2016]`<-as.numeric(GDPAfricaAvg$`2016 [YR2016]`)
+GDPAfricaAvg$`2017 [YR2017]`<-as.numeric(GDPAfricaAvg$`2017 [YR2017]`)
+
+////////////////////////////////////////////////////////////////////Back to the R Script/////////////////////////////////////////////////
+//copy and paste in r script
+xGDPAvgYear<-c(1990,2000,2009,2010,2011,2012,2013,2014,2015,2016,2017)
+
+yAvgEastAsia<-c(4.732431e+12,8.280879e+12,1.453123e+13,1.694327e+13,1.964794e+13,2.103142e+13,2.127518e+13,2.191418e+13,2.179525e+13,2.251116e+13,2.39949e+13)
+yAvgEurope<-c(8.833505e+12,1.001878e+13,2.044599e+13,2.094359e+13,2.320582e+13,2.236804e+13,2.337647e+13,2.369312e+13,2.0399e+13,2.033706e+13,2.150331e+13)
+yAvgLatinAmerica<-c(1.178575e+12,2.287587e+12,4.312103e+12,5.347331e+12,6.080908e+12,6.143788e+12,6.295129e+12,6.417071e+12,5.516998e+12,5.38351e+12,5.972061e+12)
+yAvgMiddleEast<-c(550733429745,967036532457,2.368232e+12,2.767992e+12,3.282239e+12,3.575393e+12,3.553173e+12,3.569329e+12,3.148577e+12,3.156614e+12,3.276362e+12)
+yAvgSouthAsia<-c(407227369046,622372329297,1.683488e+12,2.06106e+12,2.27188e+12,2.29728e+12,2.357175e+12,2.581874e+12,2.697314e+12,2.919155e+12,3.344576e+12)
+yAvgAfrica<-c(335811270744,395311397700,1.146699e+12,1.366865e+12,1.551746e+12,1.633941e+12,1.741112e+12,1.82865e+12,1.666818e+12,1.545564e+12,1.670997e+12)
+
+plot(xGDPAvgYear,yAvgEastAsia,type="o",col=1,pch=1,lty=1, ylim=c(min(GDPEastAsiaAvg),max(GDPEastAsiaAvg)), ylab="GDP",xlab="Years from 1990-2017",main="Region of East Asia and Pacific" )
+
+plot(xGDPAvgYear,yAvgEurope,type="o",col=2,pch=2,lty=2, ylim=c(min(GDPEuropeAvg),max(GDPEuropeAvg)), ylab="GDP",xlab="Years from 1990-2017",main="Region of Europe and Central Asia" )
+
+plot(xGDPAvgYear,yAvgLatinAmerica,type="o",col=3,pch=3,lty=3, ylim=c(min(GDPLatinAmericaAvg),max(GDPLatinAmericaAvg)), ylab="GDP",xlab="Years from 1990-2017",main="Region of Latin America and Caribbeans" )
+
+plot(xGDPAvgYear,yAvgMiddleEast,type="o",col=4,pch=4,lty=4, ylim=c(min(GDPMiddleEastAvg),max(GDPMiddleEastAvg)), ylab="GDP",xlab="Years from 1990-2017",main="Region of Middle East and North Africa" )
+
+plot(xGDPAvgYear,yAvgSouthAsia,type="o",col=8,pch=5,lty=5, ylim=c(min(GDPSouthAsiaAvg),max(GDPSouthAsiaAvg)), ylab="GDP",xlab="Years from 1990-2017",main="Region of South Asia" )
+
+plot(xGDPAvgYear,yAvgAfrica,type="o",col=6,pch=6,lty=6, ylim=c(min(GDPAfricaAvg),max(GDPAfricaAvg)), ylab="GDP",xlab="Years from 1990-2017",main="Region of Sub-Saharan Africa" )

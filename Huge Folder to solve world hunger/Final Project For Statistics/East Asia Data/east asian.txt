@@ -1,0 +1,74 @@
+#Write each line of code in the console of the dataset
+#WorldHungerDataEastAsiaAndPacific takes in the dataset of east asian and pacific region
+
+WorldHungerDataEastAsiaAndPacific<-WorldHungerDataEastAsiaAndPacific[c(41:42,109,129:134,166:177,210:215,271:272,337:351,382,402:403,425:429,460:469,499:505,519:527,532,579:581,599:608,610:611,627:628,660:663,710:715,719:723,731:732,750,784:786,808:825), ]
+
+#Making several columns null since they are useless
+WorldHungerDataEastAsiaAndPacific$...1<-NULL
+WorldHungerDataEastAsiaAndPacific$...3<-NULL
+WorldHungerDataEastAsiaAndPacific$...5<-NULL
+WorldHungerDataEastAsiaAndPacific$...6<-NULL
+WorldHungerDataEastAsiaAndPacific$...7<-NULL
+WorldHungerDataEastAsiaAndPacific$...8<-NULL
+WorldHungerDataEastAsiaAndPacific$...9<-NULL
+WorldHungerDataEastAsiaAndPacific$...12<-NULL
+WorldHungerDataEastAsiaAndPacific$...13<-NULL
+WorldHungerDataEastAsiaAndPacific$...14<-NULL
+WorldHungerDataEastAsiaAndPacific$...21<-NULL
+WorldHungerDataEastAsiaAndPacific$...22<-NULL
+WorldHungerDataEastAsiaAndPacific$...23<-NULL
+
+#Renaming the columns
+colnames(WorldHungerDataEastAsiaAndPacific)[colnames(WorldHungerDataEastAsiaAndPacific)=="...2"]<-"Countries"
+colnames(WorldHungerDataEastAsiaAndPacific)[colnames(WorldHungerDataEastAsiaAndPacific)=="...4"]<-"Survey Year"
+colnames(WorldHungerDataEastAsiaAndPacific)[colnames(WorldHungerDataEastAsiaAndPacific)=="...10"]<-"Income Group"
+colnames(WorldHungerDataEastAsiaAndPacific)[colnames(WorldHungerDataEastAsiaAndPacific)=="...11"]<-"Region"
+colnames(WorldHungerDataEastAsiaAndPacific)[colnames(WorldHungerDataEastAsiaAndPacific)=="...15"]<-"Survey Sample Size"
+colnames(WorldHungerDataEastAsiaAndPacific)[colnames(WorldHungerDataEastAsiaAndPacific)=="...16"]<-"Severe Wasting"
+colnames(WorldHungerDataEastAsiaAndPacific)[colnames(WorldHungerDataEastAsiaAndPacific)=="...17"]<-"Wasting"
+colnames(WorldHungerDataEastAsiaAndPacific)[colnames(WorldHungerDataEastAsiaAndPacific)=="...18"]<-"Overweight"
+colnames(WorldHungerDataEastAsiaAndPacific)[colnames(WorldHungerDataEastAsiaAndPacific)=="...19"]<-"Stunting"
+colnames(WorldHungerDataEastAsiaAndPacific)[colnames(WorldHungerDataEastAsiaAndPacific)=="...20"]<-"Underweight"
+colnames(WorldHungerDataEastAsiaAndPacific)[colnames(WorldHungerDataEastAsiaAndPacific)=="...24"]<-"Under 5 population (000s)"
+
+#If there are some datapoints that are labeled NA, write this command in the console
+WorldHungerDataEastAsiaAndPacific[is.na(WorldHungerDataEastAsiaAndPacific)]<- 0
+
+#if when you plot it in an r script and it gives you "must be numeric" error, write the following code in the console
+Example:
+WorldHungerDataEastAsiaAndPacific$Survey Sample Size <- as.numeric(WorldHungerDataEastAsiaAndPacific$Survey Sample Size)
+
+
+
+
+-----------------------------------------------------------------RSCRIPT-------------------------------------------------------------------
+plot(WorldHungerDataEastAsiaAndPacific$`Severe Wasting`)
+plot(WorldHungerDataEastAsiaAndPacific$Wasting)
+plot(WorldHungerDataEastAsiaAndPacific$Overweight)
+plot(WorldHungerDataEastAsiaAndPacific$Stunting)
+plot(WorldHungerDataEastAsiaAndPacific$Underweight)
+
+linmod<-lm(WorldHungerDataEastAsiaAndPacific$`Severe Wasting`~WorldHungerDataEastAsiaAndPacific$Countries)
+residual<-resid(linmod)
+plot(residual)
+abline(0,0)
+
+linmod1<-lm(WorldHungerDataEastAsiaAndPacific$Wasting~WorldHungerDataEastAsiaAndPacific$Countries)
+residual1<-resid(linmod1)
+plot(residual1)
+abline(0,0)
+
+linmod2<-lm(WorldHungerDataEastAsiaAndPacific$Overweight~WorldHungerDataEastAsiaAndPacific$Countries)
+residual2<-resid(linmod2)
+plot(residual2)
+abline(0,0)
+
+linmod3<-lm(WorldHungerDataEastAsiaAndPacific$Stunting~WorldHungerDataEastAsiaAndPacific$Countries)
+residual3<-resid(linmod3)
+plot(residual3)
+abline(0,0)
+
+linmod4<-lm(WorldHungerDataEastAsiaAndPacific$Underweight~WorldHungerDataEastAsiaAndPacific$Countries)
+residual4<-resid(linmod4)
+plot(residual4)
+abline(0,0)

@@ -1,0 +1,4 @@
+Joint_Malnutrition_Estimates_May_2018_2_1_$...16<-replace(Joint_Malnutrition_Estimates_May_2018_2_1_$...16, Joint_Malnutrition_Estimates_May_2018_2_1_$...16 == NA, 0)
+
+
+ Joint_Malnutrition_Estimates_May_2018_2_1_$...16<-as.numeric(Joint_Malnutrition_Estimates_May_2018_2_1_$...16)
